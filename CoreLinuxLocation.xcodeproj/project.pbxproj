@@ -26,12 +26,12 @@
 /* Begin PBXFileReference section */
 		6407782A1DAB8FC6001CEED5 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		7E93B0601CCC3E36004BF350 /* CoreLinuxLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreLinuxLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E93B0631CCC3E36004BF350 /* CoreLinuxLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CoreLinuxLocation.h; path = ../Sources/CoreLinuxLocation.h; sourceTree = "<group>"; };
-		7E93B0651CCC3E36004BF350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Sources/Info.plist; sourceTree = "<group>"; };
+		7E93B0631CCC3E36004BF350 /* CoreLinuxLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CoreLinuxLocation.h; path = Sources/CoreLinuxLocation.h; sourceTree = "<group>"; };
+		7E93B0651CCC3E36004BF350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
 		7E93B06A1CCC3E37004BF350 /* CoreLinuxLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLinuxLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E93B06F1CCC3E37004BF350 /* CoreLinuxLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreLinuxLocationTests.swift; path = ../Tests/CoreLinuxLocationTests/CoreLinuxLocationTests.swift; sourceTree = "<group>"; };
-		7E93B0711CCC3E37004BF350 /* Info-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Tests.plist"; path = "../Tests/CoreLinuxLocationTests/Info-Tests.plist"; sourceTree = "<group>"; };
-		7E93B07A1CCC3EF3004BF350 /* CLLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CLLocation.swift; path = ../Sources/CLLocation.swift; sourceTree = "<group>"; };
+		7E93B06F1CCC3E37004BF350 /* CoreLinuxLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreLinuxLocationTests.swift; path = Tests/CoreLinuxLocationTests/CoreLinuxLocationTests.swift; sourceTree = "<group>"; };
+		7E93B0711CCC3E37004BF350 /* Info-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "Info-Tests.plist"; path = "Tests/CoreLinuxLocationTests/Info-Tests.plist"; sourceTree = "<group>"; };
+		7E93B07A1CCC3EF3004BF350 /* CLLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CLLocation.swift; path = Sources/CLLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

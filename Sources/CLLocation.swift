@@ -15,33 +15,33 @@ typealias CLLocationSpeed = Double
 typealias CLLocationDirection = Double
 
 public struct CLLocationCoordinate2D {
-    var latitude: CLLocationDegrees
-    var longitude: CLLocationDegrees
-    init() {
+    public var latitude: CLLocationDegrees
+    public var longitude: CLLocationDegrees
+    public init() {
         latitude = 0
         longitude = 0
     }
     
-    init(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+    public init(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         self.latitude = latitude
         self.longitude = longitude
     }
 }
 
 open class CLLocation: NSObject {
-    fileprivate(set) var coordinate: CLLocationCoordinate2D
-    fileprivate(set) var altitude: CLLocationDistance = 0
-    fileprivate(set) var horizontalAccuracy: CLLocationAccuracy = 0
-    fileprivate(set) var verticalAccuracy: CLLocationAccuracy = 0
-    fileprivate(set) var timestamp  = Date()
-    fileprivate(set) var speed: CLLocationSpeed = 0
-    fileprivate(set) var course: CLLocationDirection = 0
+    public fileprivate(set) var coordinate: CLLocationCoordinate2D
+    public fileprivate(set) var altitude: CLLocationDistance = 0
+    public fileprivate(set) var horizontalAccuracy: CLLocationAccuracy = 0
+    public fileprivate(set) var verticalAccuracy: CLLocationAccuracy = 0
+    public fileprivate(set) var timestamp  = Date()
+    public fileprivate(set) var speed: CLLocationSpeed = 0
+    public fileprivate(set) var course: CLLocationDirection = 0
     
-    init(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+    public init(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
     
-    init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, horizontalAccuracy hAccuracy: CLLocationAccuracy, verticalAccuracy vAccuracy: CLLocationAccuracy, timestamp: Date) {
+    public init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, horizontalAccuracy hAccuracy: CLLocationAccuracy, verticalAccuracy vAccuracy: CLLocationAccuracy, timestamp: Date) {
         
         self.coordinate = coordinate
         self.altitude = altitude
@@ -50,7 +50,7 @@ open class CLLocation: NSObject {
         self.timestamp = timestamp
     }
     
-    init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, horizontalAccuracy hAccuracy: CLLocationAccuracy, verticalAccuracy vAccuracy: CLLocationAccuracy, course: CLLocationDirection, speed: CLLocationSpeed, timestamp: Date) {
+    public init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, horizontalAccuracy hAccuracy: CLLocationAccuracy, verticalAccuracy vAccuracy: CLLocationAccuracy, course: CLLocationDirection, speed: CLLocationSpeed, timestamp: Date) {
         
         self.coordinate = coordinate
         self.altitude = altitude
@@ -61,7 +61,7 @@ open class CLLocation: NSObject {
         self.timestamp = timestamp
     }
     
-    func distanceFromLocation(_ location: CLLocation) -> CLLocationDistance {
+    public func distanceFromLocation(_ location: CLLocation) -> CLLocationDistance {
         let R = 6371000.0;
         let dLat = (coordinate.latitude - location.coordinate.latitude) * M_PI/180.0
         let dLon = (coordinate.longitude - location.coordinate.longitude) * M_PI/180.0
