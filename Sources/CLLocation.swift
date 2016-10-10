@@ -61,7 +61,7 @@ open class CLLocation: NSObject {
         self.timestamp = timestamp
     }
     
-    public func distanceFromLocation(_ location: CLLocation) -> CLLocationDistance {
+    public func distance(from location: CLLocation) -> CLLocationDistance {
         let R = 6371000.0;
         let dLat = (coordinate.latitude - location.coordinate.latitude) * M_PI/180.0
         let dLon = (coordinate.longitude - location.coordinate.longitude) * M_PI/180.0
@@ -76,4 +76,16 @@ open class CLLocation: NSObject {
         let d = R * c;
         return d
     }
+
 }
+
+public func CLLocationCoordinate2DIsValid(_ coord: CLLocationCoordinate2D) -> Bool {
+    guard coord.latitude < 90.0 && coord.latitude > -90.0 else {
+        return false
+    }
+    guard coord.longitude < 180.0 && coord.longitude > -180.0 else {
+        return false
+    }
+    return true
+}
+
