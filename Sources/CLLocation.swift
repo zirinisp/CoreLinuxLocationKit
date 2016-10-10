@@ -8,11 +8,11 @@
 
 import Foundation
 
-typealias CLLocationDegrees = Double
-typealias CLLocationAccuracy = Double
-typealias CLLocationDistance = Double
-typealias CLLocationSpeed = Double
-typealias CLLocationDirection = Double
+public typealias CLLocationDegrees = Double
+public typealias CLLocationAccuracy = Double
+public typealias CLLocationDistance = Double
+public typealias CLLocationSpeed = Double
+public typealias CLLocationDirection = Double
 
 public struct CLLocationCoordinate2D {
     public var latitude: CLLocationDegrees
